@@ -1,0 +1,344 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 33 | Scripts: 2 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.ScreenGui.ActivateButtonEffect
+G2L["2"] = Instance.new("RemoteEvent", G2L["1"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["2"]["Name"] = [[ActivateButtonEffect]];
+G2L["2"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame
+G2L["3"] = Instance.new("ScrollingFrame", G2L["1"]);
+G2L["3"]["Active"] = true;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 255);
+G2L["3"]["Size"] = UDim2.new(0, 208, 0, 267);
+G2L["3"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Position"] = UDim2.new(0.15034, 0, 0.03452, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.drag gui
+G2L["4"] = Instance.new("LocalScript", G2L["3"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["4"]["Sandboxed"] = true;
+G2L["4"]["Name"] = [[drag gui]];
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel
+G2L["5"] = Instance.new("TextLabel", G2L["3"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["BorderSizePixel"] = 2;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Bangers.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Size"] = UDim2.new(0, 200, 0, 26);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 255);
+G2L["5"]["Text"] = [[5x5x5x50s Gui v1]];
+G2L["5"]["Position"] = UDim2.new(-0.03511, 0, -0.00143, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["6"] = Instance.new("TextButton", G2L["5"]);
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6"]["Text"] = [[music]];
+G2L["6"]["Position"] = UDim2.new(0.08, 0, 2.88461, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["7"] = Instance.new("Script", G2L["6"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["7"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["8"] = Instance.new("TextButton", G2L["5"]);
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["8"]["Text"] = [[particles]];
+G2L["8"]["Position"] = UDim2.new(0.595, 0, 2.88461, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["9"] = Instance.new("Script", G2L["8"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["9"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["a"] = Instance.new("TextButton", G2L["5"]);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["a"]["Text"] = [[skybox]];
+G2L["a"]["Position"] = UDim2.new(0.08, 0, 4.5, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["b"] = Instance.new("Script", G2L["a"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["b"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["c"] = Instance.new("Script", G2L["a"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["c"]["RunContext"] = Enum.RunContext.Server;
+G2L["c"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["a"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["d"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.skybox
+G2L["e"] = Instance.new("RemoteEvent", G2L["a"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["e"]["Name"] = [[skybox]];
+G2L["e"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["f"] = Instance.new("TextButton", G2L["5"]);
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["f"]["Text"] = [[Skely sky]];
+G2L["f"]["Position"] = UDim2.new(0.595, 0, 4.5, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["10"] = Instance.new("Script", G2L["f"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["10"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["11"] = Instance.new("TextButton", G2L["5"]);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["11"]["Text"] = [[Face all]];
+G2L["11"]["Position"] = UDim2.new(0.595, 0, 1.30769, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["12"] = Instance.new("Script", G2L["11"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["12"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["13"] = Instance.new("TextButton", G2L["5"]);
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["13"]["Text"] = [[avatar all]];
+G2L["13"]["Position"] = UDim2.new(0.595, 0, 6.07692, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["14"] = Instance.new("Script", G2L["13"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["14"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["15"] = Instance.new("TextButton", G2L["5"]);
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["15"]["Text"] = [[jumpscare]];
+G2L["15"]["Position"] = UDim2.new(0.595, 0, 7.69231, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["16"] = Instance.new("Script", G2L["15"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["16"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["17"] = Instance.new("Script", G2L["15"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["17"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["18"] = Instance.new("TextButton", G2L["5"]);
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["18"]["Text"] = [[Spooky Spam]];
+G2L["18"]["Position"] = UDim2.new(0.08, 0, 6.11538, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["19"] = Instance.new("Script", G2L["18"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["19"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["1a"] = Instance.new("Script", G2L["18"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["1a"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["1b"] = Instance.new("TextButton", G2L["5"]);
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1b"]["Text"] = [[Anti leave]];
+G2L["1b"]["Position"] = UDim2.new(0.08, 0, 7.80769, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["1c"] = Instance.new("Script", G2L["1b"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["1c"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["1d"] = Instance.new("Script", G2L["1b"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["1d"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton
+G2L["1e"] = Instance.new("TextButton", G2L["5"]);
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["Size"] = UDim2.new(0, 96, 0, 34);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1e"]["Text"] = [[decal spam]];
+G2L["1e"]["Position"] = UDim2.new(0.085, 0, 1.30769, 0);
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script
+G2L["1f"] = Instance.new("Script", G2L["1e"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["1f"]["Sandboxed"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.Script.Script
+G2L["20"] = Instance.new("Script", G2L["1f"]);
+
+
+
+-- StarterGui.ScreenGui.PackageLink
+G2L["21"] = Instance.new("PackageLink", G2L["1"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["21"]["Sandboxed"] = false;
+G2L["21"]["VersionNumber"] = 1;
+G2L["21"]["Name"] = [[PackageLink]];
+G2L["21"]["DefaultName"] = [[]];
+G2L["21"]["Archivable"] = true;
+
+
+-- StarterGui.ScreenGui.ScrollingFrame.drag gui
+local function C_4()
+local script = G2L["4"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end;
+task.spawn(C_4);
+-- StarterGui.ScreenGui.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_d()
+local script = G2L["d"];
+	script.Parent.MouseButton1Click:Connect(function()
+	  script.Parent.skybox:FireServer()
+	end)
+	
+end;
+task.spawn(C_d);
+
+return G2L["1"], require;
