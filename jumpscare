@@ -1,0 +1,195 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Intro = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+local Background_2 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local TextLabel_4 = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+Intro.Name = "Intro"
+Intro.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Background.Name = "Background"
+Background.Parent = Intro
+Background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Background.BackgroundTransparency = 1.000
+Background.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Background.Size = UDim2.new(1, 0, 1, 0)
+Background.ZIndex = 50
+
+Background_2.Name = "Background"
+Background_2.Parent = Background
+Background_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Background_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Background_2.BorderSizePixel = 0
+Background_2.Position = UDim2.new(-0.0398293026, 0, -0.267647058, 0)
+Background_2.Size = UDim2.new(1.5, 0, 1.5, 0)
+Background_2.ZIndex = 50
+
+ImageLabel.Parent = Background
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageLabel.Size = UDim2.new(0.999245822, 0, 1, 0)
+ImageLabel.ZIndex = 50
+ImageLabel.Image = "rbxassetid://113867290328949"
+
+Frame.Parent = Background
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame.Position = UDim2.new(0, 0, 0.745098054, 0)
+Frame.Size = UDim2.new(0.266214192, 0, 0.254901975, 0)
+Frame.ZIndex = 50
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.453496158, 0)
+Frame_2.Size = UDim2.new(0.848177612, 0, 0.546503961, 0)
+Frame_2.ZIndex = 50
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.Position = UDim2.new(0.0994732752, 0, 0.147214159, 0)
+TextLabel.Size = UDim2.new(0.677254081, 0, 0.255767614, 0)
+TextLabel.ZIndex = 50
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Now joining 5x5x5x50s realm.."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 25.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 25
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(48, 49, 47)
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.Position = UDim2.new(0.015314783, 0, 0.684161484, 0)
+TextLabel_2.Size = UDim2.new(0.96120137, 0, 0.278212994, 0)
+TextLabel_2.ZIndex = 50
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "0%"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0.5, 0)
+UICorner.Parent = TextLabel_2
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.0202873405, 0, -0.186008915, 0)
+TextLabel_3.Size = UDim2.new(0.435028255, 0, 0.269230753, 0)
+TextLabel_3.ZIndex = 50
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Loading..."
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 30.000
+TextLabel_3.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+UICorner_2.Parent = TextLabel_3
+
+UITextSizeConstraint_2.Parent = TextLabel_3
+UITextSizeConstraint_2.MaxTextSize = 30
+
+TextLabel_4.Parent = Frame_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_4.Position = UDim2.new(0.0775105581, 0, 0.402981758, 0)
+TextLabel_4.Size = UDim2.new(0.50963527, 0, 0.210374594, 0)
+TextLabel_4.ZIndex = 50
+TextLabel_4.Font = Enum.Font.SourceSansItalic
+TextLabel_4.Text = "A place of pure homeless joy."
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 16.000
+TextLabel_4.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = TextLabel_4
+UITextSizeConstraint_3.MaxTextSize = 16
+
+-- Scripts:
+
+local function HUCIXU_fake_script() -- Intro.LocalScript 
+	local script = Instance.new('LocalScript', Intro)
+
+	-- Decompiled with the Synapse X Luau decompiler.
+	
+	local l__Parent__1 = script.Parent;
+	local v2 = l__Parent__1.Parent:FindFirstChild("Credits") or l__Parent__1.Parent:WaitForChild("Credits");
+	local l__Workspace__3 = game:GetService("Workspace");
+	local l__Players__4 = game:GetService("Players");
+	local v5 = l__Workspace__3 and l__Workspace__3:FindFirstChild("Realm") or l__Workspace__3:WaitForChild("Realm");
+	local v6 = l__Workspace__3 and l__Workspace__3:FindFirstChild("meen") or l__Workspace__3:WaitForChild("meen");
+	local l__LocalPlayer__7 = game:GetService("Players").LocalPlayer;
+	local v8 = l__LocalPlayer__7.Character or l__LocalPlayer__7.CharacterAdded:Wait();
+	local v9 = v8:FindFirstChild("HumanoidRootPart") or v8:WaitForChild("HumanoidRootPart");
+	local v10 = l__Parent__1 and l__Parent__1:FindFirstChild("Background") or l__Parent__1:WaitForChild("Background");
+	v9.Anchored = true;
+	v10.Visible = true;
+	v6:Play();
+	wait(6);
+	v10.Visible = false;
+	v2.Enabled = true;
+	v9.Anchored = false;
+	wait(1);
+	if v6.IsPlaying then
+		v6.Ended:Wait();
+	end;
+	v5:Play();
+	l__Parent__1:Destroy();
+	
+end
+coroutine.wrap(HUCIXU_fake_script)()
+local function PBUVBJP_fake_script() -- Background.Script 
+	local script = Instance.new('Script', Background)
+
+	wait (5.5)
+	script.Parent.Visible = false
+end
+coroutine.wrap(PBUVBJP_fake_script)()
+local function BMDXXGS_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	-- Decompiled with the Synapse X Luau decompiler.
+	
+	local l__Parent__1 = script.Parent;
+	wait(2);
+	l__Parent__1.BackgroundColor3 = Color3.fromRGB(26, 143, 221);
+	l__Parent__1.Text = "100%";
+	
+end
+coroutine.wrap(BMDXXGS_fake_script)()
+local function GUNBAD_fake_script() -- Intro.Script 
+	local script = Instance.new('Script', Intro)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(GUNBAD_fake_script)()
