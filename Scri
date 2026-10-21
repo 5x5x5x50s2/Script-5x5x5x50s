@@ -1,0 +1,4 @@
+local m = Instance.new("Message", workspace)
+m.Text = "THIS GAME GOT HACKED BY YOLIZ/YORIZUKAA" 
+wait(3.5)
+m:Destroy()
