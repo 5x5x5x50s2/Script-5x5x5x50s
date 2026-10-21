@@ -1,0 +1,23 @@
+for i,v in pairs(game.Workspace:GetDescendants()) do
+	if v.className == "Hint" then
+		v:Destroy()
+		v:Remove()	
+	end	
+end
+
+wait(1)
+
+function typeText(hint, text, typingSpeed)
+    for i = 1, #text do
+        hint.Text = string.sub(text, 1, i)
+        wait(typingSpeed)
+    end
+end
+  
+msg = coroutine.create(function()
+local msg = Instance.new("Hint", workspace)
+typeText(msg, "Discord Link Invite : discord.com/invite/jz6ZT4UwBd", 0.001)
+end)
+coroutine.resume(msg)
+
+wait(5.5)
